@@ -19,9 +19,9 @@ for (let i = 1; i < links.length; i++) {
 		path: links[i].to,
 		name: links[i].component,
 		// route level code-splitting
-		// this generates a separate chunk (about.[hash].js) for this route
+		// this generates a separate chunk (component.[hash].js) for this route
 		// which is lazy-loaded when the route is visited.
-		component: () => import(`../views/${links[i].component}.vue`)
+		component: links[i].component,
 	})
 }
 

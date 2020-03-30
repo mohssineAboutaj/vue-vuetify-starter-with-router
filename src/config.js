@@ -25,7 +25,10 @@ let links = [
 		icon: 'info-circle',
 		title: 'About',
 		to: '/about',
-		component: 'About',
+		component: () => import(
+			/* webpackChunkName: "About" */
+			`@/views/About.vue`
+		),
 	},
 ]
 
