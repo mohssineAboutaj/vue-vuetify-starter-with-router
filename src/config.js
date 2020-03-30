@@ -11,7 +11,7 @@ const title = "Vue Vuetify FontAwesome - starter app"
  * @property {String} icon icon to show aside to the route title
  * @property {String} title title of the route
  * @property {String} to path of the route
- * @property {String} component component name of the route
+ * @property {Function} component component name of the route
  * @property {Boolean} hidden hidden from navbar or any navigation bar
  */
 let links = [
