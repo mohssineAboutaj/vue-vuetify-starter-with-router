@@ -1,32 +1,32 @@
 <template>
-	<v-app dark class="main-app">
-		<Navbar />
-		<router-view />
-		<Footer />
-	</v-app>
+  <v-app dark class="main-app">
+    <Navbar />
+    <router-view class="mt-12 mb-6" />
+    <Footer />
+  </v-app>
 </template>
 
 <script>
 // import components
-import Navbar from '@/components/navbar/navbar.default'
-import Footer from '@/components/footer/footer.default'
+import Navbar from "@/components/navbar/navbar.default";
+import Footer from "@/components/footer/footer.default";
 
 export default {
-  name: 'App',
-	components: {
-		Navbar,
-		Footer,
-	},
-}
+  name: "App",
+  components: {
+    Navbar,
+    Footer,
+  },
+};
 </script>
 
 <style lang="scss">
 body {
-	background-color: #555;
+  background-color: #555;
 }
 
 h1 {
-	margin-bottom: 15px;
-	padding: 10px;
+  margin-bottom: 15px;
+  padding: 10px;
 }
 </style>

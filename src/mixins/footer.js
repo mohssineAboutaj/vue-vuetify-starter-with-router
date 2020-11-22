@@ -1,15 +1,12 @@
-const {
-	title,
-	links,
-} = require('../config')
+const { title, links } = require("../config");
 
-const pkg = require('../../package.json')
+const { author } = require("../../package.json");
 
 module.exports.general = {
-	data: () => ({
-		fixed: true,
-		title,
-		links,
-		author: pkg.author,
-	}),
-}
+  data: () => ({
+    fixed: false,
+    title,
+    links,
+    author: author || "no author",
+  }),
+};
