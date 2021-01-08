@@ -1,7 +1,9 @@
 <template>
   <v-app dark class="main-app">
     <Navbar />
-    <router-view class="mt-12 mb-6" />
+    <v-main>
+      <router-view class="mt-12 mb-6" />
+    </v-main>
     <Footer />
   </v-app>
 </template>
