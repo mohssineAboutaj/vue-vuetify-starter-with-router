@@ -1,15 +1,3 @@
-<div style="overflow:hidden;text-align:center">
-  <div style="float:left;width: 33.3%">	
-    <img  style="max-width:100px;margin: 5px 15px" src="https://vuejs.org/images/logo.png" />
-  </div>
-  <div style="float:left;width: 33.3%">	
-	  <img  style="max-width:100px;margin: 5px 15pxa" src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png" />
-  </div>
-  <div style="float:left;width: 33.3%">	
-  	<img  style="max-width:100px;margin: 5px 15px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRCpfLNi3k11lMdk8QR9g7r1sqB6sWSC1agQJBEmptS4O9B0HL9" />
-  </div>
-</div>
-
 # Vue Vuetify Starter With VueRouter
 
 - [Vue Vuetify Starter With VueRouter](#vue-vuetify-starter-with-vuerouter)
