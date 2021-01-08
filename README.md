@@ -1,11 +1,11 @@
-<div style="display: flex;justify-content:center">
-  <div>	
+<div style="overflow:hidden;text-align:center">
+  <div style="float:left;width: 33.3%">	
     <img  style="max-width:100px;margin: 5px 15px" src="https://vuejs.org/images/logo.png" />
   </div>
-  <div>	
+  <div style="float:left;width: 33.3%">	
 	  <img  style="max-width:100px;margin: 5px 15pxa" src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png" />
   </div>
-  <div>	
+  <div style="float:left;width: 33.3%">	
   	<img  style="max-width:100px;margin: 5px 15px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRCpfLNi3k11lMdk8QR9g7r1sqB6sWSC1agQJBEmptS4O9B0HL9" />
   </div>
 </div>
@@ -14,6 +14,7 @@
 
 - [Vue Vuetify Starter With VueRouter](#vue-vuetify-starter-with-vuerouter)
   - [About](#about)
+  - [Demo](#demo)
   - [Configuration](#configuration)
   - [Features](#features)
   - [Project setup](#project-setup)
@@ -26,6 +27,10 @@
 ## About
 
 A [Vuejs](http://vuejs.org/) & [Vuetify](http://vuetifyjs.com/) starter app with [VueRouter](https://router.vuejs.org/), [FontAwesome 5](https://fontawesome.com/) icons built using [Vue CLI](https://cli.vuejs.org/)
+
+## Demo
+
+- [Live Demo](https://vue-vuetify-starter-with-router.netlify.app/)
 
 _Note_: it deosn't have [Vuex](https://vuex.vuejs.org/), if you want it you can install it
 
