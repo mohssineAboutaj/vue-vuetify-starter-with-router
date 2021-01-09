@@ -1,5 +1,6 @@
 {
   "name": "vue-vuetify-starter",
+  "description": "A Vuejs & Vuetify starter app with VueRouter, FontAwesome 5 icons",
   "version": "0.1.0",
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -33,5 +34,15 @@
   },
   "repository": "git@github.com:mohssineAboutaj/vue-vuetify-starter-with-router.git",
   "author": "Mohssine Aboutaj",
-  "license": "MIT"
+  "license": "MIT",
+  "homepage": "https://vue-vuetify-starter-with-router.netlify.app",
+  "keywords": [
+    "vue",
+    "vuetify",
+    "fontawesome",
+    "vue router",
+    "starter",
+    "starter template",
+    "boilerplate"
+  ]
 }
