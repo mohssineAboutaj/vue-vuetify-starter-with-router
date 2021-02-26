@@ -1,34 +1,26 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import Vue from "vue";
+import VueRouter from "vue-router";
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
-let routes = [
-	{
-		path: '/',
-		name: 'Home',
-		component: Home
-	},
-]
+let routes = [];
 
-const { links } = require('../config')
+const { links } = require("../config");
 
-for (let i = 1; i < links.length; i++) {
-	routes.push({
-		path: links[i].to,
-		name: links[i].component,
-		// route level code-splitting
-		// this generates a separate chunk (component.[hash].js) for this route
-		// which is lazy-loaded when the route is visited.
-		component: links[i].component,
-	})
-}
+// fill routes
+links.forEach(link => {
+  routes.push({
+    path: link.path,
+    name: link.title.toLowerCase() || "",
+    // route level code-splitting
+    // this generates a separate chunk (component.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: link.component,
+  });
+});
 
-const router = new VueRouter({
-	mode: 'history',
-	base: process.env.BASE_URL,
-	routes
-})
-
-export default router
+export default new VueRouter({
+  mode: "history",
+  base: process.env.BASE_URL,
+  routes,
+});

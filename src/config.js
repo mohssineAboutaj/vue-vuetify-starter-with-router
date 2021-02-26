@@ -1,8 +1,11 @@
+// import pages/components
+import Home from "@/views/Home.vue";
+
 // site title, description, & general info
 /**
  * @type {String} website title
  */
-const title = "Vue Vuetify FontAwesome - starter app"
+const title = "Vue Vuetify FontAwesome - starter app";
 
 // links & routes
 /**
@@ -10,31 +13,29 @@ const title = "Vue Vuetify FontAwesome - starter app"
  *
  * @property {String} icon icon to show aside to the route title
  * @property {String} title title of the route
- * @property {String} to path of the route
- * @property {Function} component component name of the route
+ * @property {String} path path of the route
+ * @property {Function} component import component
  * @property {Boolean} hidden hidden from navbar or any navigation bar
  */
 let links = [
-	{
-		icon: 'home',
-		title: 'Home',
-		to: '/',
-		component: 'Home',
-	},
-	{
-		icon: 'info-circle',
-		title: 'About',
-		to: '/about',
-		component: () => import(
-			/* webpackChunkName: "About" */
-			`@/views/About.vue`
-		),
-	},
-]
-
+  {
+    icon: "home",
+    title: "Home",
+    path: "/",
+    component: Home,
+  },
+  {
+    icon: "info-circle",
+    title: "About",
+    path: "/about",
+    component: () => {
+      return import(
+        /* webpackChunkName: "About" */
+        `@/views/About.vue`
+      );
+    },
+  },
+];
 
 // exporting
-export {
-	title,
-	links,
-}
+export { title, links };

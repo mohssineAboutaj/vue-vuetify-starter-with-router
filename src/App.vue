@@ -1,8 +1,8 @@
 <template>
   <v-app dark class="main-app">
     <Navbar />
-    <v-main>
-      <router-view class="mt-12 mb-6" />
+    <v-main class="bg">
+      <router-view />
     </v-main>
     <Footer />
   </v-app>
@@ -23,10 +23,6 @@ export default {
 </script>
 
 <style lang="scss">
-body {
-  background-color: #555;
-}
-
 h1 {
   margin-bottom: 15px;
   padding: 10px;
