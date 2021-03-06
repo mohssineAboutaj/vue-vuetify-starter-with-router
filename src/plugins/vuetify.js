@@ -5,8 +5,10 @@ import en from "vuetify/es5/locale/en";
 // import vuetify colors
 import colors from "vuetify/es5/util/colors";
 
+Vue.use(Vuetify);
+
 // set global shared colors palette
-const globalColorsPalette = {
+export const globalColorsPalette = {
   primary: colors.blue.darken4,
   secondary: colors.green.darken4,
   accent: colors.blue.accent1,
@@ -16,8 +18,7 @@ const globalColorsPalette = {
   warning: colors.yellow.darken3,
 };
 
-Vue.use(Vuetify);
-
+// export Vuetify instance
 export default new Vuetify({
   theme: {
     options: {
