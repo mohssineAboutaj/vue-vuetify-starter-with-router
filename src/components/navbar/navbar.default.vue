@@ -14,7 +14,7 @@
           v-for="(item, i) in links"
           v-show="!item.hidden"
           :key="i"
-          :to="item.to"
+          :to="item.path"
           router
           exact
         >

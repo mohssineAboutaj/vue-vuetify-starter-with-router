@@ -11,7 +11,7 @@ const { links } = require("../config");
 links.forEach(link => {
   routes.push({
     path: link.path,
-    name: link.title.toLowerCase() || "",
+    name: link.name,
     // route level code-splitting
     // this generates a separate chunk (component.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
