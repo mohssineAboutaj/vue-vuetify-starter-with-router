@@ -7,6 +7,8 @@ import Home from "@/views/Home.vue";
  */
 const title = "Vue Vuetify FontAwesome - starter app";
 
+const author = "Mohssine Aboutaj";
+
 // links & routes
 /**
  * @type {Array} all routes in the application
@@ -41,4 +43,4 @@ let links = [
 ];
 
 // exporting
-export { title, links };
+export { title, links, author };

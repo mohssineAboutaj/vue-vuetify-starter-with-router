@@ -13,9 +13,9 @@
 </template>
 
 <script>
-import { general } from "@/mixins/footer";
+import { footer } from "@/mixins";
 
 export default {
-  mixins: [general],
+  mixins: [footer],
 };
 </script>

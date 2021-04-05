@@ -1,6 +1,16 @@
-const { title, links } = require("../config");
+import { links, title, author } from "./config";
 
-module.exports.general = {
+// global
+export const global = {
+  methods: {
+    xyz() {
+      console.log("XYZ methods from mixins {global}");
+    },
+  },
+};
+
+// navbar
+export const navbar = {
   data: () => ({
     darkMode: false,
     clipped: false,
@@ -22,4 +32,14 @@ module.exports.general = {
     // miximize sidebar on large screens
     this.drawer = window.innerWidth > 1200 ? true : false;
   },
+};
+
+// footer
+export const footer = {
+  data: () => ({
+    fixed: false,
+    title,
+    links,
+    author: author || "no author",
+  }),
 };

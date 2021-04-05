@@ -2,6 +2,11 @@ module.exports = {
   transpileDependencies: ["vuetify"],
   devServer: {
     port: 8080,
-    open: true,
+  },
+  chainWebpack: config => {
+    config.plugin("html").tap(args => {
+      args[0].title = "Vue Vuetify Starter With VueRouter";
+      return args;
+    });
   },
 };

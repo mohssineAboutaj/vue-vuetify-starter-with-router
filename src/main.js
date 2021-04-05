@@ -5,10 +5,10 @@ import vuetify from "./plugins/vuetify";
 import "roboto-fontface/css/roboto/roboto-fontface.css";
 import "@fortawesome/fontawesome-free/css/all.css";
 import router from "./router";
-import globalMixins from "./mixins/globalMixins";
+import { global } from "./mixins";
 
 // use mixins
-Vue.mixin(globalMixins);
+Vue.mixin(global);
 
 Vue.config.productionTip = false;
 
