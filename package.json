@@ -1,7 +1,7 @@
 {
   "name": "vue-vuetify-starter",
   "description": "A Vuejs & Vuetify starter app with VueRouter, FontAwesome 5 icons",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",

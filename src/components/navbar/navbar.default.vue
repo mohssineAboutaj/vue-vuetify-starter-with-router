@@ -10,21 +10,22 @@
       :right="right"
     >
       <v-list>
-        <v-list-item
-          v-for="(item, i) in links"
-          v-show="!item.hidden"
-          :key="i"
-          :to="item.path"
-          router
-          exact
-        >
-          <v-list-item-action>
-            <v-icon>fas fa-{{ item.icon }} </v-icon>
-          </v-list-item-action>
-          <v-list-item-content class="mx-2">
-            <v-list-item-title>{{ item.title }}</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
+        <template v-for="(item, i) in links">
+          <v-list-item
+            v-if="!item.hidden"
+            :key="i"
+            :to="item.path"
+            router
+            exact
+          >
+            <v-list-item-action>
+              <v-icon>fas fa-{{ item.icon }} </v-icon>
+            </v-list-item-action>
+            <v-list-item-content class="mx-2">
+              <v-list-item-title>{{ item.title }}</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </template>
       </v-list>
     </v-navigation-drawer>
     <v-app-bar :clipped-left="clipped" :fixed="fixed" color="primary" dark app>
